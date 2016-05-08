@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym bin7seg_anx /home/konda/.xilinx/domaci3/bin7seg_anx.sch /home/konda/.xilinx/domaci3/bin7seg_anx.sym 

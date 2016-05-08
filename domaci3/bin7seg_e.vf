@@ -1,0 +1,66 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : bin7seg_e.vf
+// /___/   /\     Timestamp : 05/08/2016 16:34:40
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog /home/konda/.xilinx/domaci3/bin7seg_e.vf -w /home/konda/.xilinx/domaci3/bin7seg_e.sch
+//Design Name: bin7seg_e
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module bin7seg_e(X1, 
+                 X2, 
+                 X3, 
+                 X4, 
+                 E);
+
+    input X1;
+    input X2;
+    input X3;
+    input X4;
+   output E;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_9;
+   wire XLXN_57;
+   wire XLXN_58;
+   wire XLXN_59;
+   
+   AND2  XLXI_1 (.I0(XLXN_58), 
+                .I1(XLXN_57), 
+                .O(XLXN_1));
+   AND2  XLXI_2 (.I0(X3), 
+                .I1(X1), 
+                .O(XLXN_3));
+   AND2  XLXI_50 (.I0(XLXN_59), 
+                 .I1(X3), 
+                 .O(XLXN_2));
+   AND2  XLXI_51 (.I0(X2), 
+                 .I1(X1), 
+                 .O(XLXN_9));
+   OR4  XLXI_52 (.I0(XLXN_9), 
+                .I1(XLXN_3), 
+                .I2(XLXN_2), 
+                .I3(XLXN_1), 
+                .O(E));
+   INV  XLXI_53 (.I(X2), 
+                .O(XLXN_57));
+   INV  XLXI_54 (.I(X4), 
+                .O(XLXN_58));
+   INV  XLXI_55 (.I(X4), 
+                .O(XLXN_59));
+endmodule

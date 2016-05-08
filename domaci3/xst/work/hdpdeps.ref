@@ -1,0 +1,127 @@
+V3 65
+FL /home/konda/.xilinx/domaci3/bin7seg.vhf 2016/05/08.22:20:01 P.20131013
+EN work/bin7seg_anx_MUSER_bin7seg 1462738828 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin7seg_anx_MUSER_bin7seg/BEHAVIORAL 1462738829 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf \
+      EN work/bin7seg_anx_MUSER_bin7seg 1462738828 CP AND2 CP INV
+EN work/OR6_MXILINX_bin7seg 1462738830 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/OR6_MXILINX_bin7seg/BEHAVIORAL 1462738831 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf EN work/OR6_MXILINX_bin7seg 1462738830 \
+      CP OR4 CP OR3 CP FMAP
+EN work/bin7seg_a_MUSER_bin7seg 1462738832 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin7seg_a_MUSER_bin7seg/BEHAVIORAL 1462738833 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf EN work/bin7seg_a_MUSER_bin7seg 1462738832 \
+      CP AND2 CP AND3 CP INV CP OR6_MXILINX_bin7seg
+EN work/bin7seg_b_MUSER_bin7seg 1462738834 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin7seg_b_MUSER_bin7seg/BEHAVIORAL 1462738835 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf EN work/bin7seg_b_MUSER_bin7seg 1462738834 \
+      CP AND2 CP AND3 CP INV CP OR5
+EN work/bin7seg_g_MUSER_bin7seg 1462738836 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin7seg_g_MUSER_bin7seg/BEHAVIORAL 1462738837 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf EN work/bin7seg_g_MUSER_bin7seg 1462738836 \
+      CP AND2 CP OR5 CP AND3 CP INV
+EN work/bin7seg_f_MUSER_bin7seg 1462738838 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin7seg_f_MUSER_bin7seg/BEHAVIORAL 1462738839 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf EN work/bin7seg_f_MUSER_bin7seg 1462738838 \
+      CP AND2 CP OR5 CP AND3 CP INV
+EN work/bin7seg_e_MUSER_bin7seg 1462738840 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin7seg_e_MUSER_bin7seg/BEHAVIORAL 1462738841 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf EN work/bin7seg_e_MUSER_bin7seg 1462738840 \
+      CP AND2 CP OR4 CP INV
+EN work/bin7seg_d_MUSER_bin7seg 1462738842 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin7seg_d_MUSER_bin7seg/BEHAVIORAL 1462738843 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf EN work/bin7seg_d_MUSER_bin7seg 1462738842 \
+      CP AND3 CP OR5 CP INV
+EN work/bin7seg_c_MUSER_bin7seg 1462738844 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin7seg_c_MUSER_bin7seg/BEHAVIORAL 1462738845 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf EN work/bin7seg_c_MUSER_bin7seg 1462738844 \
+      CP AND2 CP OR5 CP INV
+EN work/bin7seg 1462738846 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin7seg/BEHAVIORAL 1462738847 \
+      FL /home/konda/.xilinx/domaci3/bin7seg.vhf EN work/bin7seg 1462738846 \
+      CP bin7seg_b_MUSER_bin7seg CP bin7seg_c_MUSER_bin7seg \
+      CP bin7seg_d_MUSER_bin7seg CP bin7seg_e_MUSER_bin7seg \
+      CP bin7seg_f_MUSER_bin7seg CP bin7seg_g_MUSER_bin7seg \
+      CP bin7seg_a_MUSER_bin7seg CP bin7seg_anx_MUSER_bin7seg CP INV
+FL /home/konda/.xilinx/domaci3/bin7seg_a.vhf 2016/05/08.16:39:32 P.20131013
+EN work/OR6_MXILINX_bin7seg_a 1462738848 \
+      FL /home/konda/.xilinx/domaci3/bin7seg_a.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/OR6_MXILINX_bin7seg_a/BEHAVIORAL 1462738849 \
+      FL /home/konda/.xilinx/domaci3/bin7seg_a.vhf EN work/OR6_MXILINX_bin7seg_a 1462738848 \
+      CP OR4 CP OR3 CP FMAP
+EN work/bin7seg_a 1462738850 \
+      FL /home/konda/.xilinx/domaci3/bin7seg_a.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin7seg_a/BEHAVIORAL 1462738851 \
+      FL /home/konda/.xilinx/domaci3/bin7seg_a.vhf EN work/bin7seg_a 1462738850 \
+      CP AND2 CP AND3 CP INV CP OR6_MXILINX_bin7seg_a
+FL /home/konda/.xilinx/domaci3/bin7seg_anx.vhf 2016/05/08.22:20:01 P.20131013
+EN work/bin7seg_anx 1462738852 FL /home/konda/.xilinx/domaci3/bin7seg_anx.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/bin7seg_anx/BEHAVIORAL 1462738853 \
+      FL /home/konda/.xilinx/domaci3/bin7seg_anx.vhf EN work/bin7seg_anx 1462738852 \
+      CP AND2 CP INV
+FL /home/konda/.xilinx/domaci3/bin7seg_b.vhf 2016/05/08.16:39:33 P.20131013
+EN work/bin7seg_b 1462738854 FL /home/konda/.xilinx/domaci3/bin7seg_b.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/bin7seg_b/BEHAVIORAL 1462738855 \
+      FL /home/konda/.xilinx/domaci3/bin7seg_b.vhf EN work/bin7seg_b 1462738854 \
+      CP AND2 CP AND3 CP INV CP OR5
+FL /home/konda/.xilinx/domaci3/bin7seg_c.vhf 2016/05/08.16:39:33 P.20131013
+EN work/bin7seg_c 1462738856 FL /home/konda/.xilinx/domaci3/bin7seg_c.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/bin7seg_c/BEHAVIORAL 1462738857 \
+      FL /home/konda/.xilinx/domaci3/bin7seg_c.vhf EN work/bin7seg_c 1462738856 \
+      CP AND2 CP OR5 CP INV
+FL /home/konda/.xilinx/domaci3/bin7seg_d.vhf 2016/05/08.16:39:33 P.20131013
+EN work/bin7seg_d 1462738858 FL /home/konda/.xilinx/domaci3/bin7seg_d.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/bin7seg_d/BEHAVIORAL 1462738859 \
+      FL /home/konda/.xilinx/domaci3/bin7seg_d.vhf EN work/bin7seg_d 1462738858 \
+      CP AND3 CP OR5 CP INV
+FL /home/konda/.xilinx/domaci3/bin7seg_e.vhf 2016/05/08.16:39:32 P.20131013
+EN work/bin7seg_e 1462738860 FL /home/konda/.xilinx/domaci3/bin7seg_e.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/bin7seg_e/BEHAVIORAL 1462738861 \
+      FL /home/konda/.xilinx/domaci3/bin7seg_e.vhf EN work/bin7seg_e 1462738860 \
+      CP AND2 CP OR4 CP INV
+FL /home/konda/.xilinx/domaci3/bin7seg_f.vhf 2016/05/08.16:39:32 P.20131013
+EN work/bin7seg_f 1462738862 FL /home/konda/.xilinx/domaci3/bin7seg_f.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/bin7seg_f/BEHAVIORAL 1462738863 \
+      FL /home/konda/.xilinx/domaci3/bin7seg_f.vhf EN work/bin7seg_f 1462738862 \
+      CP AND2 CP OR5 CP AND3 CP INV
+FL /home/konda/.xilinx/domaci3/bin7seg_g.vhf 2016/05/08.16:39:33 P.20131013
+EN work/bin7seg_g 1462738864 FL /home/konda/.xilinx/domaci3/bin7seg_g.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/bin7seg_g/BEHAVIORAL 1462738865 \
+      FL /home/konda/.xilinx/domaci3/bin7seg_g.vhf EN work/bin7seg_g 1462738864 \
+      CP AND2 CP OR5 CP AND3 CP INV

@@ -1,0 +1,433 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> 
+Reading design: bin7seg.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "bin7seg.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "bin7seg"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-5-fg320
+
+---- Source Options
+Top Module Name                    : bin7seg
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg.vhf" in Library work.
+Entity <bin7seg_anx_MUSER_bin7seg> compiled.
+Entity <bin7seg_anx_MUSER_bin7seg> (Architecture <BEHAVIORAL>) compiled.
+Entity <or6_mxilinx_bin7seg> compiled.
+Entity <or6_mxilinx_bin7seg> (Architecture <behavioral>) compiled.
+Entity <bin7seg_a_muser_bin7seg> compiled.
+Entity <bin7seg_a_muser_bin7seg> (Architecture <behavioral>) compiled.
+Entity <bin7seg_b_muser_bin7seg> compiled.
+Entity <bin7seg_b_muser_bin7seg> (Architecture <behavioral>) compiled.
+Entity <bin7seg_g_muser_bin7seg> compiled.
+Entity <bin7seg_g_muser_bin7seg> (Architecture <behavioral>) compiled.
+Entity <bin7seg_f_muser_bin7seg> compiled.
+Entity <bin7seg_f_muser_bin7seg> (Architecture <behavioral>) compiled.
+Entity <bin7seg_e_muser_bin7seg> compiled.
+Entity <bin7seg_e_muser_bin7seg> (Architecture <behavioral>) compiled.
+Entity <bin7seg_d_muser_bin7seg> compiled.
+Entity <bin7seg_d_muser_bin7seg> (Architecture <behavioral>) compiled.
+Entity <bin7seg_c_muser_bin7seg> compiled.
+Entity <bin7seg_c_muser_bin7seg> (Architecture <behavioral>) compiled.
+Entity <bin7seg> compiled.
+Entity <bin7seg> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg_a.vhf" in Library work.
+Architecture behavioral of Entity or6_mxilinx_bin7seg_a is up to date.
+Architecture behavioral of Entity bin7seg_a is up to date.
+Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg_anx.vhf" in Library work.
+Entity <bin7seg_anx> compiled.
+Entity <bin7seg_anx> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg_b.vhf" in Library work.
+Architecture behavioral of Entity bin7seg_b is up to date.
+Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg_c.vhf" in Library work.
+Architecture behavioral of Entity bin7seg_c is up to date.
+Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg_d.vhf" in Library work.
+Architecture behavioral of Entity bin7seg_d is up to date.
+Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg_e.vhf" in Library work.
+Architecture behavioral of Entity bin7seg_e is up to date.
+Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg_f.vhf" in Library work.
+Architecture behavioral of Entity bin7seg_f is up to date.
+Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg_g.vhf" in Library work.
+Architecture behavioral of Entity bin7seg_g is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <bin7seg> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for module <bin7seg_b_MUSER_bin7seg> in library <work>.
+
+Analyzing hierarchy for module <bin7seg_c_MUSER_bin7seg> in library <work>.
+
+Analyzing hierarchy for module <bin7seg_d_MUSER_bin7seg> in library <work>.
+
+Analyzing hierarchy for module <bin7seg_e_MUSER_bin7seg> in library <work>.
+
+Analyzing hierarchy for module <bin7seg_f_MUSER_bin7seg> in library <work>.
+
+Analyzing hierarchy for module <bin7seg_g_MUSER_bin7seg> in library <work>.
+
+Analyzing hierarchy for module <bin7seg_a_MUSER_bin7seg> in library <work>.
+
+Analyzing hierarchy for entity <bin7seg_anx_MUSER_bin7seg> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for module <OR6_MXILINX_bin7seg> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <bin7seg> in library <work> (Architecture <behavioral>).
+Entity <bin7seg> analyzed. Unit <bin7seg> generated.
+
+Analyzing module <bin7seg_b_MUSER_bin7seg> in library <work>.
+Module <bin7seg_b_MUSER_bin7seg> is correct for synthesis.
+ 
+Analyzing module <bin7seg_c_MUSER_bin7seg> in library <work>.
+Module <bin7seg_c_MUSER_bin7seg> is correct for synthesis.
+ 
+Analyzing module <bin7seg_d_MUSER_bin7seg> in library <work>.
+Module <bin7seg_d_MUSER_bin7seg> is correct for synthesis.
+ 
+Analyzing module <bin7seg_e_MUSER_bin7seg> in library <work>.
+Module <bin7seg_e_MUSER_bin7seg> is correct for synthesis.
+ 
+Analyzing module <bin7seg_f_MUSER_bin7seg> in library <work>.
+Module <bin7seg_f_MUSER_bin7seg> is correct for synthesis.
+ 
+Analyzing module <bin7seg_g_MUSER_bin7seg> in library <work>.
+Module <bin7seg_g_MUSER_bin7seg> is correct for synthesis.
+ 
+Analyzing module <bin7seg_a_MUSER_bin7seg> in library <work>.
+Module <bin7seg_a_MUSER_bin7seg> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_41_0" for instance <XLXI_41> in unit <bin7seg_a_MUSER_bin7seg>.
+Analyzing module <OR6_MXILINX_bin7seg> in library <work>.
+Module <OR6_MXILINX_bin7seg> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_106> in unit <OR6_MXILINX_bin7seg>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_107> in unit <OR6_MXILINX_bin7seg>.
+Analyzing Entity <bin7seg_anx_MUSER_bin7seg> in library <work> (Architecture <BEHAVIORAL>).
+Entity <bin7seg_anx_MUSER_bin7seg> analyzed. Unit <bin7seg_anx_MUSER_bin7seg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <bin7seg_b_MUSER_bin7seg>.
+    Related source file is "bin7seg.vf".
+Unit <bin7seg_b_MUSER_bin7seg> synthesized.
+
+
+Synthesizing Unit <bin7seg_c_MUSER_bin7seg>.
+    Related source file is "bin7seg.vf".
+Unit <bin7seg_c_MUSER_bin7seg> synthesized.
+
+
+Synthesizing Unit <bin7seg_d_MUSER_bin7seg>.
+    Related source file is "bin7seg.vf".
+Unit <bin7seg_d_MUSER_bin7seg> synthesized.
+
+
+Synthesizing Unit <bin7seg_e_MUSER_bin7seg>.
+    Related source file is "bin7seg.vf".
+Unit <bin7seg_e_MUSER_bin7seg> synthesized.
+
+
+Synthesizing Unit <bin7seg_f_MUSER_bin7seg>.
+    Related source file is "bin7seg.vf".
+Unit <bin7seg_f_MUSER_bin7seg> synthesized.
+
+
+Synthesizing Unit <bin7seg_g_MUSER_bin7seg>.
+    Related source file is "bin7seg.vf".
+Unit <bin7seg_g_MUSER_bin7seg> synthesized.
+
+
+Synthesizing Unit <bin7seg_anx_MUSER_bin7seg>.
+    Related source file is "/home/konda/.xilinx/domaci3/bin7seg.vhf".
+Unit <bin7seg_anx_MUSER_bin7seg> synthesized.
+
+
+Synthesizing Unit <OR6_MXILINX_bin7seg>.
+    Related source file is "bin7seg.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <OR6_MXILINX_bin7seg> synthesized.
+
+
+Synthesizing Unit <bin7seg_a_MUSER_bin7seg>.
+    Related source file is "bin7seg.vf".
+Unit <bin7seg_a_MUSER_bin7seg> synthesized.
+
+
+Synthesizing Unit <bin7seg>.
+    Related source file is "/home/konda/.xilinx/domaci3/bin7seg.vhf".
+Unit <bin7seg> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <bin7seg> ...
+
+Optimizing unit <bin7seg_anx_MUSER_bin7seg> ...
+
+Optimizing unit <OR6_MXILINX_bin7seg> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block bin7seg, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : bin7seg.ngr
+Top Level Output File Name         : bin7seg
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 15
+
+Cell Usage :
+# BELS                             : 107
+#      AND2                        : 27
+#      AND3                        : 12
+#      GND                         : 1
+#      INV                         : 59
+#      OR3                         : 1
+#      OR4                         : 2
+#      OR5                         : 5
+# IO Buffers                       : 15
+#      IBUF                        : 4
+#      OBUF                        : 11
+# Others                           : 2
+#      FMAP                        : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-5 
+
+ Number of Slices:                        0  out of   8672     0%  
+ Number of 4 input LUTs:                 59  out of  17344     0%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    250     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 10.191ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 90 / 11
+-------------------------------------------------------------------------
+Delay:               10.191ns (Levels of Logic = 8)
+  Source:            X1 (PAD)
+  Destination:       A (PAD)
+
+  Data Path: X1 to A
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            26   1.106   1.071  X1_IBUF (X1_IBUF)
+     INV:I->O              1   0.612   0.357  XLXI_15/XLXI_36 (XLXI_15/XLXN_5)
+     AND3:I2->O            1   0.612   0.357  XLXI_15/XLXI_30 (XLXI_15/XLXN_13)
+     begin scope: 'XLXI_15/XLXI_41'
+     OR3:I0->O             1   0.612   0.357  I_36_88 (I35)
+     OR4:I3->O             1   0.612   0.357  I_36_87 (O_DUMMY)
+     end scope: 'XLXI_15/XLXI_41'
+     INV:I->O              1   0.612   0.357  XLXI_22 (A_OBUF)
+     OBUF:I->O                 3.169          A_OBUF (A)
+    ----------------------------------------
+    Total                     10.191ns (7.335ns logic, 2.856ns route)
+                                       (72.0% logic, 28.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 23.78 secs
+ 
+--> 
+
+
+Total memory usage is 526336 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

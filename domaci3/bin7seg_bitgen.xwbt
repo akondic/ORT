@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/konda/.xilinx/domaci3/bin7seg.ncd
+OUTFILE=/home/konda/.xilinx/domaci3/bin7seg.bit
+FAMILY=Spartan3E
+PART=xc3s1200e-5fg320
+WORKINGDIR=/home/konda/.xilinx/domaci3
+LICENSE=WebPack
+USER_INFO=211167795_0_0_737

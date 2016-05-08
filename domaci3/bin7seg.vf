@@ -1,0 +1,567 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : bin7seg.vf
+// /___/   /\     Timestamp : 05/08/2016 16:34:40
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog /home/konda/.xilinx/domaci3/bin7seg.vf -w /home/konda/.xilinx/domaci3/bin7seg.sch
+//Design Name: bin7seg
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module OR6_MXILINX_bin7seg(I0, 
+                           I1, 
+                           I2, 
+                           I3, 
+                           I4, 
+                           I5, 
+                           O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+   output O;
+   
+   wire dummy;
+   wire I35;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   OR4  I_36_87 (.I0(I0), 
+                .I1(I1), 
+                .I2(I2), 
+                .I3(I35), 
+                .O(O_DUMMY));
+   OR3  I_36_88 (.I0(I3), 
+                .I1(I4), 
+                .I2(I5), 
+                .O(I35));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_106 (.I1(I0), 
+                  .I2(I1), 
+                  .I3(I2), 
+                  .I4(I35), 
+                  .O(O_DUMMY));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_107 (.I1(I3), 
+                  .I2(I4), 
+                  .I3(I5), 
+                  .I4(dummy), 
+                  .O(I35));
+endmodule
+`timescale 1ns / 1ps
+
+module bin7seg_a_MUSER_bin7seg(X1, 
+                               X2, 
+                               X3, 
+                               X4, 
+                               A);
+
+    input X1;
+    input X2;
+    input X3;
+    input X4;
+   output A;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_13;
+   wire XLXN_16;
+   wire XLXN_44;
+   wire XLXN_45;
+   
+   AND2  XLXI_1 (.I0(XLXN_2), 
+                .I1(XLXN_1), 
+                .O(XLXN_9));
+   AND2  XLXI_2 (.I0(X3), 
+                .I1(XLXN_4), 
+                .O(XLXN_10));
+   AND2  XLXI_4 (.I0(X3), 
+                .I1(X2), 
+                .O(XLXN_16));
+   AND2  XLXI_6 (.I0(XLXN_8), 
+                .I1(X1), 
+                .O(XLXN_45));
+   AND3  XLXI_30 (.I0(X4), 
+                 .I1(X2), 
+                 .I2(XLXN_5), 
+                 .O(XLXN_13));
+   AND3  XLXI_31 (.I0(XLXN_7), 
+                 .I1(XLXN_6), 
+                 .I2(X1), 
+                 .O(XLXN_44));
+   INV  XLXI_32 (.I(X2), 
+                .O(XLXN_1));
+   INV  XLXI_33 (.I(X4), 
+                .O(XLXN_2));
+   INV  XLXI_35 (.I(X1), 
+                .O(XLXN_4));
+   INV  XLXI_36 (.I(X1), 
+                .O(XLXN_5));
+   INV  XLXI_38 (.I(X2), 
+                .O(XLXN_6));
+   INV  XLXI_39 (.I(X3), 
+                .O(XLXN_7));
+   INV  XLXI_40 (.I(X4), 
+                .O(XLXN_8));
+   (* HU_SET = "XLXI_41_0" *) 
+   OR6_MXILINX_bin7seg  XLXI_41 (.I0(XLXN_45), 
+                                .I1(XLXN_44), 
+                                .I2(XLXN_16), 
+                                .I3(XLXN_13), 
+                                .I4(XLXN_10), 
+                                .I5(XLXN_9), 
+                                .O(A));
+endmodule
+`timescale 1ns / 1ps
+
+module bin7seg_b_MUSER_bin7seg(X1, 
+                               X2, 
+                               X3, 
+                               X4, 
+                               B);
+
+    input X1;
+    input X2;
+    input X3;
+    input X4;
+   output B;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_5;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_12;
+   wire XLXN_14;
+   wire XLXN_44;
+   wire XLXN_48;
+   wire XLXN_50;
+   wire XLXN_51;
+   wire XLXN_52;
+   wire XLXN_53;
+   wire XLXN_54;
+   
+   AND2  XLXI_1 (.I0(XLXN_2), 
+                .I1(XLXN_1), 
+                .O(XLXN_8));
+   AND2  XLXI_2 (.I0(XLXN_53), 
+                .I1(XLXN_52), 
+                .O(XLXN_12));
+   AND3  XLXI_30 (.I0(X4), 
+                 .I1(X3), 
+                 .I2(XLXN_54), 
+                 .O(XLXN_14));
+   AND3  XLXI_31 (.I0(X4), 
+                 .I1(XLXN_5), 
+                 .I2(X1), 
+                 .O(XLXN_44));
+   INV  XLXI_32 (.I(X1), 
+                .O(XLXN_1));
+   INV  XLXI_33 (.I(X2), 
+                .O(XLXN_2));
+   INV  XLXI_35 (.I(X1), 
+                .O(XLXN_48));
+   INV  XLXI_36 (.I(X3), 
+                .O(XLXN_50));
+   INV  XLXI_38 (.I(X3), 
+                .O(XLXN_5));
+   AND3  XLXI_42 (.I0(XLXN_51), 
+                 .I1(XLXN_50), 
+                 .I2(XLXN_48), 
+                 .O(XLXN_9));
+   INV  XLXI_45 (.I(X4), 
+                .O(XLXN_51));
+   INV  XLXI_46 (.I(X2), 
+                .O(XLXN_52));
+   INV  XLXI_47 (.I(X4), 
+                .O(XLXN_53));
+   INV  XLXI_48 (.I(X1), 
+                .O(XLXN_54));
+   OR5  XLXI_49 (.I0(XLXN_44), 
+                .I1(XLXN_14), 
+                .I2(XLXN_12), 
+                .I3(XLXN_9), 
+                .I4(XLXN_8), 
+                .O(B));
+endmodule
+`timescale 1ns / 1ps
+
+module bin7seg_g_MUSER_bin7seg(X1, 
+                               X2, 
+                               X3, 
+                               X4, 
+                               G);
+
+    input X1;
+    input X2;
+    input X3;
+    input X4;
+   output G;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_9;
+   wire XLXN_55;
+   wire XLXN_56;
+   wire XLXN_57;
+   wire XLXN_58;
+   wire XLXN_59;
+   wire XLXN_60;
+   
+   AND2  XLXI_1 (.I0(X3), 
+                .I1(XLXN_56), 
+                .O(XLXN_1));
+   OR5  XLXI_49 (.I0(XLXN_55), 
+                .I1(XLXN_9), 
+                .I2(XLXN_3), 
+                .I3(XLXN_2), 
+                .I4(XLXN_1), 
+                .O(G));
+   AND2  XLXI_51 (.I0(XLXN_60), 
+                 .I1(X1), 
+                 .O(XLXN_9));
+   AND2  XLXI_52 (.I0(X4), 
+                 .I1(X1), 
+                 .O(XLXN_55));
+   AND3  XLXI_53 (.I0(XLXN_59), 
+                 .I1(X2), 
+                 .I2(XLXN_58), 
+                 .O(XLXN_3));
+   AND2  XLXI_55 (.I0(XLXN_57), 
+                 .I1(X3), 
+                 .O(XLXN_2));
+   INV  XLXI_56 (.I(X2), 
+                .O(XLXN_56));
+   INV  XLXI_57 (.I(X4), 
+                .O(XLXN_57));
+   INV  XLXI_59 (.I(X1), 
+                .O(XLXN_58));
+   INV  XLXI_60 (.I(X3), 
+                .O(XLXN_59));
+   INV  XLXI_61 (.I(X2), 
+                .O(XLXN_60));
+endmodule
+`timescale 1ns / 1ps
+
+module bin7seg_f_MUSER_bin7seg(X1, 
+                               X2, 
+                               X3, 
+                               X4, 
+                               F);
+
+    input X1;
+    input X2;
+    input X3;
+    input X4;
+   output F;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_9;
+   wire XLXN_55;
+   wire XLXN_56;
+   wire XLXN_57;
+   wire XLXN_58;
+   wire XLXN_59;
+   wire XLXN_60;
+   wire XLXN_61;
+   
+   AND2  XLXI_1 (.I0(XLXN_57), 
+                .I1(XLXN_56), 
+                .O(XLXN_1));
+   AND2  XLXI_2 (.I0(XLXN_60), 
+                .I1(X2), 
+                .O(XLXN_3));
+   OR5  XLXI_49 (.I0(XLXN_55), 
+                .I1(XLXN_9), 
+                .I2(XLXN_3), 
+                .I3(XLXN_2), 
+                .I4(XLXN_1), 
+                .O(F));
+   AND2  XLXI_51 (.I0(XLXN_61), 
+                 .I1(X1), 
+                 .O(XLXN_9));
+   AND2  XLXI_52 (.I0(X3), 
+                 .I1(X1), 
+                 .O(XLXN_55));
+   AND3  XLXI_53 (.I0(XLXN_59), 
+                 .I1(X2), 
+                 .I2(XLXN_58), 
+                 .O(XLXN_2));
+   INV  XLXI_54 (.I(X3), 
+                .O(XLXN_56));
+   INV  XLXI_55 (.I(X4), 
+                .O(XLXN_57));
+   INV  XLXI_56 (.I(X1), 
+                .O(XLXN_58));
+   INV  XLXI_57 (.I(X3), 
+                .O(XLXN_59));
+   INV  XLXI_58 (.I(X4), 
+                .O(XLXN_60));
+   INV  XLXI_59 (.I(X2), 
+                .O(XLXN_61));
+endmodule
+`timescale 1ns / 1ps
+
+module bin7seg_e_MUSER_bin7seg(X1, 
+                               X2, 
+                               X3, 
+                               X4, 
+                               E);
+
+    input X1;
+    input X2;
+    input X3;
+    input X4;
+   output E;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_9;
+   wire XLXN_57;
+   wire XLXN_58;
+   wire XLXN_59;
+   
+   AND2  XLXI_1 (.I0(XLXN_58), 
+                .I1(XLXN_57), 
+                .O(XLXN_1));
+   AND2  XLXI_2 (.I0(X3), 
+                .I1(X1), 
+                .O(XLXN_3));
+   AND2  XLXI_50 (.I0(XLXN_59), 
+                 .I1(X3), 
+                 .O(XLXN_2));
+   AND2  XLXI_51 (.I0(X2), 
+                 .I1(X1), 
+                 .O(XLXN_9));
+   OR4  XLXI_52 (.I0(XLXN_9), 
+                .I1(XLXN_3), 
+                .I2(XLXN_2), 
+                .I3(XLXN_1), 
+                .O(E));
+   INV  XLXI_53 (.I(X2), 
+                .O(XLXN_57));
+   INV  XLXI_54 (.I(X4), 
+                .O(XLXN_58));
+   INV  XLXI_55 (.I(X4), 
+                .O(XLXN_59));
+endmodule
+`timescale 1ns / 1ps
+
+module bin7seg_d_MUSER_bin7seg(X1, 
+                               X2, 
+                               X3, 
+                               X4, 
+                               D);
+
+    input X1;
+    input X2;
+    input X3;
+    input X4;
+   output D;
+   
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_12;
+   wire XLXN_14;
+   wire XLXN_44;
+   wire XLXN_45;
+   wire XLXN_46;
+   wire XLXN_47;
+   wire XLXN_48;
+   wire XLXN_49;
+   wire XLXN_50;
+   wire XLXN_51;
+   wire XLXN_52;
+   
+   AND3  XLXI_30 (.I0(XLXN_50), 
+                 .I1(X3), 
+                 .I2(X2), 
+                 .O(XLXN_14));
+   AND3  XLXI_31 (.I0(XLXN_52), 
+                 .I1(XLXN_51), 
+                 .I2(X1), 
+                 .O(XLXN_44));
+   AND3  XLXI_42 (.I0(X4), 
+                 .I1(X3), 
+                 .I2(XLXN_48), 
+                 .O(XLXN_9));
+   OR5  XLXI_49 (.I0(XLXN_44), 
+                .I1(XLXN_14), 
+                .I2(XLXN_12), 
+                .I3(XLXN_9), 
+                .I4(XLXN_8), 
+                .O(D));
+   AND3  XLXI_50 (.I0(XLXN_47), 
+                 .I1(XLXN_46), 
+                 .I2(XLXN_45), 
+                 .O(XLXN_8));
+   AND3  XLXI_51 (.I0(X4), 
+                 .I1(XLXN_49), 
+                 .I2(X2), 
+                 .O(XLXN_12));
+   INV  XLXI_52 (.I(X1), 
+                .O(XLXN_45));
+   INV  XLXI_53 (.I(X2), 
+                .O(XLXN_46));
+   INV  XLXI_54 (.I(X4), 
+                .O(XLXN_47));
+   INV  XLXI_55 (.I(X2), 
+                .O(XLXN_48));
+   INV  XLXI_56 (.I(X3), 
+                .O(XLXN_49));
+   INV  XLXI_57 (.I(X4), 
+                .O(XLXN_50));
+   INV  XLXI_58 (.I(X3), 
+                .O(XLXN_51));
+   INV  XLXI_59 (.I(X4), 
+                .O(XLXN_52));
+endmodule
+`timescale 1ns / 1ps
+
+module bin7seg_c_MUSER_bin7seg(X1, 
+                               X2, 
+                               X3, 
+                               X4, 
+                               C);
+
+    input X1;
+    input X2;
+    input X3;
+    input X4;
+   output C;
+   
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_7;
+   wire XLXN_9;
+   wire XLXN_55;
+   wire XLXN_56;
+   wire XLXN_57;
+   wire XLXN_58;
+   wire XLXN_59;
+   wire XLXN_60;
+   wire XLXN_61;
+   
+   AND2  XLXI_1 (.I0(XLXN_57), 
+                .I1(XLXN_56), 
+                .O(XLXN_4));
+   AND2  XLXI_2 (.I0(X4), 
+                .I1(XLXN_59), 
+                .O(XLXN_7));
+   OR5  XLXI_49 (.I0(XLXN_55), 
+                .I1(XLXN_9), 
+                .I2(XLXN_7), 
+                .I3(XLXN_5), 
+                .I4(XLXN_4), 
+                .O(C));
+   AND2  XLXI_50 (.I0(X4), 
+                 .I1(XLXN_58), 
+                 .O(XLXN_5));
+   AND2  XLXI_51 (.I0(X2), 
+                 .I1(XLXN_60), 
+                 .O(XLXN_9));
+   AND2  XLXI_52 (.I0(XLXN_61), 
+                 .I1(X1), 
+                 .O(XLXN_55));
+   INV  XLXI_53 (.I(X1), 
+                .O(XLXN_56));
+   INV  XLXI_54 (.I(X3), 
+                .O(XLXN_57));
+   INV  XLXI_55 (.I(X1), 
+                .O(XLXN_58));
+   INV  XLXI_56 (.I(X3), 
+                .O(XLXN_59));
+   INV  XLXI_57 (.I(X1), 
+                .O(XLXN_60));
+   INV  XLXI_58 (.I(X2), 
+                .O(XLXN_61));
+endmodule
+`timescale 1ns / 1ps
+
+module bin7seg(X1, 
+               X2, 
+               X3, 
+               X4, 
+               A, 
+               B, 
+               C, 
+               D, 
+               E, 
+               F, 
+               G);
+
+    input X1;
+    input X2;
+    input X3;
+    input X4;
+   output A;
+   output B;
+   output C;
+   output D;
+   output E;
+   output F;
+   output G;
+   
+   
+   bin7seg_b_MUSER_bin7seg  XLXI_8 (.X1(X1), 
+                                   .X2(X2), 
+                                   .X3(X3), 
+                                   .X4(X4), 
+                                   .B(B));
+   bin7seg_c_MUSER_bin7seg  XLXI_9 (.X1(X1), 
+                                   .X2(X2), 
+                                   .X3(X3), 
+                                   .X4(X4), 
+                                   .C(C));
+   bin7seg_d_MUSER_bin7seg  XLXI_10 (.X1(X1), 
+                                    .X2(X2), 
+                                    .X3(X3), 
+                                    .X4(X4), 
+                                    .D(D));
+   bin7seg_e_MUSER_bin7seg  XLXI_11 (.X1(X1), 
+                                    .X2(X2), 
+                                    .X3(X3), 
+                                    .X4(X4), 
+                                    .E(E));
+   bin7seg_f_MUSER_bin7seg  XLXI_12 (.X1(X1), 
+                                    .X2(X2), 
+                                    .X3(X3), 
+                                    .X4(X4), 
+                                    .F(F));
+   bin7seg_g_MUSER_bin7seg  XLXI_13 (.X1(X1), 
+                                    .X2(X2), 
+                                    .X3(X3), 
+                                    .X4(X4), 
+                                    .G(G));
+   bin7seg_a_MUSER_bin7seg  XLXI_15 (.X1(X1), 
+                                    .X2(X2), 
+                                    .X3(X3), 
+                                    .X4(X4), 
+                                    .A(A));
+endmodule
