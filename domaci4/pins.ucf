@@ -1,0 +1,15 @@
+net "CLK" loc = "B8";
+NET "PR" LOC = "H13";
+
+net "CA" loc = "L18";
+net "CB" loc = "F18";
+net "CC" loc = "D17";
+net "CD" loc = "D16";
+net "CE" loc = "G14";
+net "CF" loc = "J17";
+net "CG" loc = "H14";
+
+net "AN0" loc = "F17";
+net "AN1" loc = "H17";
+net "AN2" loc = "C18";
+net "AN3" loc = "F15";
