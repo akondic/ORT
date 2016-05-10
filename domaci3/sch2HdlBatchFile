@@ -1,3 +1,2 @@
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,/home/konda/.xilinx/domaci3/bin7seg.vhf,-w,/home/konda/.xilinx/domaci3/bin7seg.sch
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,/home/konda/.xilinx/domaci3/bin7seg_anx.vhf,-w,/home/konda/.xilinx/domaci3/bin7seg_anx.sch
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,/home/konda/.xilinx/domaci3/bin7seg.vhf,-w,/home/konda/.xilinx/domaci3/bin7seg.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf,-w,/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf,-w,/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.sch

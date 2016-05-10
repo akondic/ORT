@@ -1,7 +1,7 @@
-NET "X1" LOC = "G18";
-NET "X2" LOC = "H18";
-NET "X3" LOC = "K18";
-NET "X4" LOC = "K17";
+NET "X1" LOC = "K17";
+NET "X2" LOC = "K18";
+NET "X3" LOC = "H18";
+NET "X4" LOC = "G18";
 
 NET "A" LOC = "L18";
 NET "B" LOC = "F18";

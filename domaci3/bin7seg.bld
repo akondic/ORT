@@ -5,7 +5,7 @@ Command Line: /home/konda/.xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild
 -intstyle ise -dd _ngo -nt timestamp -uc io_map.ucf -p xc3s1200e-fg320-5
 bin7seg.ngc bin7seg.ngd
 
-Reading NGO file "/home/konda/.xilinx/domaci3/bin7seg.ngc" ...
+Reading NGO file "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -30,7 +30,7 @@ NGDBUILD Design Results Summary:
 Total memory usage is 387120 kilobytes
 
 Writing NGD file "bin7seg.ngd" ...
-Total REAL time to NGDBUILD completion:  9 sec
-Total CPU time to NGDBUILD completion:   8 sec
+Total REAL time to NGDBUILD completion:  15 sec
+Total CPU time to NGDBUILD completion:   13 sec
 
 Writing NGDBUILD log file "bin7seg.bld"...

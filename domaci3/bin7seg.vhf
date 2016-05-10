@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : bin7seg.vhf
--- /___/   /\     Timestamp : 05/08/2016 22:20:01
+-- /___/   /\     Timestamp : 05/10/2016 18:09:44
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl /home/konda/.xilinx/domaci3/bin7seg.vhf -w /home/konda/.xilinx/domaci3/bin7seg.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl /home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf -w /home/konda/Files/Programs/git/ORT/domaci3/bin7seg.sch
 --Design Name: bin7seg
 --Device: spartan3e
 --Purpose:

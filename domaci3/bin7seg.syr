@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> 
 Reading design: bin7seg.prj
@@ -107,9 +107,47 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg.vhf" in Library work.
-Entity <bin7seg_anx_MUSER_bin7seg> compiled.
-Entity <bin7seg_anx_MUSER_bin7seg> (Architecture <BEHAVIORAL>) compiled.
+WARNING:HDLParsers:3607 - Unit work/bin7seg_anx_MUSER_bin7seg is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_anx_MUSER_bin7seg/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/OR6_MXILINX_bin7seg is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/OR6_MXILINX_bin7seg/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_a_MUSER_bin7seg is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_a_MUSER_bin7seg/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_b_MUSER_bin7seg is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_b_MUSER_bin7seg/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_g_MUSER_bin7seg is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_g_MUSER_bin7seg/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_f_MUSER_bin7seg is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_f_MUSER_bin7seg/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_e_MUSER_bin7seg is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_e_MUSER_bin7seg/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_d_MUSER_bin7seg is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_d_MUSER_bin7seg/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_c_MUSER_bin7seg is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_c_MUSER_bin7seg/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
+WARNING:HDLParsers:3607 - Unit work/OR6_MXILINX_bin7seg_a is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_a.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_a.vhf".
+WARNING:HDLParsers:3607 - Unit work/OR6_MXILINX_bin7seg_a/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_a.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_a.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_a is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_a.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_a.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_a/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_a.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_a.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_anx is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_anx.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_anx.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_anx/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_anx.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_anx.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_b is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_b.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_b.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_b/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_b.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_b.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_c is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_c.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_c.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_c/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_c.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_c.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_d is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_d.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_d.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_d/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_d.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_d.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_e is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_e.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_e.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_e/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_e.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_e.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_f is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_f.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_f.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_f/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_f.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_f.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_g is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_g.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_g.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin7seg_g/BEHAVIORAL is now defined in a different file.  It was defined in "/home/konda/.xilinx/domaci3/bin7seg_g.vhf", and is now defined in "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_g.vhf".
+Compiling vhdl file "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf" in Library work.
+Entity <bin7seg_anx_muser_bin7seg> compiled.
+Entity <bin7seg_anx_muser_bin7seg> (Architecture <behavioral>) compiled.
 Entity <or6_mxilinx_bin7seg> compiled.
 Entity <or6_mxilinx_bin7seg> (Architecture <behavioral>) compiled.
 Entity <bin7seg_a_muser_bin7seg> compiled.
@@ -128,23 +166,22 @@ Entity <bin7seg_c_muser_bin7seg> compiled.
 Entity <bin7seg_c_muser_bin7seg> (Architecture <behavioral>) compiled.
 Entity <bin7seg> compiled.
 Entity <bin7seg> (Architecture <behavioral>) compiled.
-Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg_a.vhf" in Library work.
+Compiling vhdl file "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_a.vhf" in Library work.
 Architecture behavioral of Entity or6_mxilinx_bin7seg_a is up to date.
 Architecture behavioral of Entity bin7seg_a is up to date.
-Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg_anx.vhf" in Library work.
-Entity <bin7seg_anx> compiled.
-Entity <bin7seg_anx> (Architecture <BEHAVIORAL>) compiled.
-Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg_b.vhf" in Library work.
+Compiling vhdl file "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_anx.vhf" in Library work.
+Architecture behavioral of Entity bin7seg_anx is up to date.
+Compiling vhdl file "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_b.vhf" in Library work.
 Architecture behavioral of Entity bin7seg_b is up to date.
-Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg_c.vhf" in Library work.
+Compiling vhdl file "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_c.vhf" in Library work.
 Architecture behavioral of Entity bin7seg_c is up to date.
-Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg_d.vhf" in Library work.
+Compiling vhdl file "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_d.vhf" in Library work.
 Architecture behavioral of Entity bin7seg_d is up to date.
-Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg_e.vhf" in Library work.
+Compiling vhdl file "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_e.vhf" in Library work.
 Architecture behavioral of Entity bin7seg_e is up to date.
-Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg_f.vhf" in Library work.
+Compiling vhdl file "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_f.vhf" in Library work.
 Architecture behavioral of Entity bin7seg_f is up to date.
-Compiling vhdl file "/home/konda/.xilinx/domaci3/bin7seg_g.vhf" in Library work.
+Compiling vhdl file "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg_g.vhf" in Library work.
 Architecture behavioral of Entity bin7seg_g is up to date.
 
 =========================================================================
@@ -166,7 +203,7 @@ Analyzing hierarchy for module <bin7seg_g_MUSER_bin7seg> in library <work>.
 
 Analyzing hierarchy for module <bin7seg_a_MUSER_bin7seg> in library <work>.
 
-Analyzing hierarchy for entity <bin7seg_anx_MUSER_bin7seg> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <bin7seg_anx_MUSER_bin7seg> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for module <OR6_MXILINX_bin7seg> in library <work>.
 
@@ -204,7 +241,7 @@ Module <OR6_MXILINX_bin7seg> is correct for synthesis.
  
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_106> in unit <OR6_MXILINX_bin7seg>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_107> in unit <OR6_MXILINX_bin7seg>.
-Analyzing Entity <bin7seg_anx_MUSER_bin7seg> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <bin7seg_anx_MUSER_bin7seg> in library <work> (Architecture <behavioral>).
 Entity <bin7seg_anx_MUSER_bin7seg> analyzed. Unit <bin7seg_anx_MUSER_bin7seg> generated.
 
 
@@ -245,7 +282,7 @@ Unit <bin7seg_g_MUSER_bin7seg> synthesized.
 
 
 Synthesizing Unit <bin7seg_anx_MUSER_bin7seg>.
-    Related source file is "/home/konda/.xilinx/domaci3/bin7seg.vhf".
+    Related source file is "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
 Unit <bin7seg_anx_MUSER_bin7seg> synthesized.
 
 
@@ -261,7 +298,7 @@ Unit <bin7seg_a_MUSER_bin7seg> synthesized.
 
 
 Synthesizing Unit <bin7seg>.
-    Related source file is "/home/konda/.xilinx/domaci3/bin7seg.vhf".
+    Related source file is "/home/konda/Files/Programs/git/ORT/domaci3/bin7seg.vhf".
 Unit <bin7seg> synthesized.
 
 
@@ -419,15 +456,15 @@ Delay:               10.191ns (Levels of Logic = 8)
 =========================================================================
 
 
-Total REAL time to Xst completion: 26.00 secs
-Total CPU time to Xst completion: 23.78 secs
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 19.66 secs
  
 --> 
 
 
-Total memory usage is 526336 kilobytes
+Total memory usage is 526340 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :   39 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Arch_Konda::  Sun May 08 22:21:48 2016
+Arch_Konda::  Tue May 10 18:11:31 2016
 
 par -w -intstyle ise -ol high -t 1 bin7seg_map.ncd bin7seg.ncd bin7seg.pcf 
 
@@ -60,37 +60,37 @@ Total REAL time at the beginning of Placer: 6 secs
 Total CPU  time at the beginning of Placer: 5 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:fb33f6db) REAL time: 11 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:fb6974eb) REAL time: 11 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:fb33f6db) REAL time: 11 secs 
+Phase 2.7  Design Feasibility Check (Checksum:fb6974eb) REAL time: 12 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:fb33f6db) REAL time: 11 secs 
+Phase 3.31  Local Placement Optimization (Checksum:fb6974eb) REAL time: 12 secs 
 
 Phase 4.2  Initial Clock and IO Placement
-Phase 4.2  Initial Clock and IO Placement (Checksum:fb33f6db) REAL time: 11 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:fb6974eb) REAL time: 12 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:fb33f6db) REAL time: 11 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:fb6974eb) REAL time: 12 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:fb33f6db) REAL time: 11 secs 
+Phase 6.36  Local Placement Optimization (Checksum:fb6974eb) REAL time: 12 secs 
 
 Phase 7.8  Global Placement
 ..
-Phase 7.8  Global Placement (Checksum:5517202e) REAL time: 11 secs 
+Phase 7.8  Global Placement (Checksum:590bbbca) REAL time: 12 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:5517202e) REAL time: 11 secs 
+Phase 8.5  Local Placement Optimization (Checksum:590bbbca) REAL time: 12 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:5177d3ce) REAL time: 11 secs 
+Phase 9.18  Placement Optimization (Checksum:512a3903) REAL time: 12 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:5177d3ce) REAL time: 11 secs 
+Phase 10.5  Local Placement Optimization (Checksum:512a3903) REAL time: 12 secs 
 
-Total REAL time to Placer completion: 11 secs 
+Total REAL time to Placer completion: 12 secs 
 Total CPU  time to Placer completion: 10 secs 
 Writing design to file bin7seg.ncd
 
@@ -103,9 +103,9 @@ Phase  1  : 58 unrouted;      REAL time: 23 secs
 
 Phase  2  : 58 unrouted;      REAL time: 23 secs 
 
-Phase  3  : 3 unrouted;      REAL time: 23 secs 
+Phase  3  : 2 unrouted;      REAL time: 23 secs 
 
-Phase  4  : 3 unrouted; (Par is working to improve performance)     REAL time: 24 secs 
+Phase  4  : 2 unrouted; (Par is working to improve performance)     REAL time: 24 secs 
 
 Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 24 secs 
 
@@ -120,7 +120,7 @@ Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 2
 Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
 
 Total REAL time to Router completion: 25 secs 
-Total CPU time to Router completion: 23 secs 
+Total CPU time to Router completion: 22 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -139,8 +139,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 25 secs 
-Total CPU time to PAR completion: 24 secs 
+Total REAL time to PAR completion: 26 secs 
+Total CPU time to PAR completion: 23 secs 
 
 Peak Memory Usage:  577 MB
 

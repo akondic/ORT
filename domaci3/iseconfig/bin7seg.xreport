@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-05-08T22:17:42</DateModified>
+  <DateModified>2016-05-10T18:08:59</DateModified>
   <ModuleName>bin7seg</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/konda/.xilinx/domaci3/iseconfig/bin7seg.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/konda/.xilinx/domaci3/</ImplementationReportsDirectory>
+  <SavedFilePath>/home/konda/Files/Programs/git/ORT/domaci3/iseconfig/bin7seg.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/konda/Files/Programs/git/ORT/domaci3/</ImplementationReportsDirectory>
   <DateInitialized>2016-05-08T21:03:28</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
