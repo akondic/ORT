@@ -1,0 +1,101 @@
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s500e-fg320-4 tekst_scroll.ngc tekst_scroll.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o tekst_scroll_map.ncd tekst_scroll.ngd tekst_scroll.pcf 
+par -w -intstyle ise -ol high -t 1 tekst_scroll_map.ncd tekst_scroll.ncd tekst_scroll.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tekst_scroll.twx tekst_scroll.ncd -o tekst_scroll.twr tekst_scroll.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f tekst_scroll.ut tekst_scroll.ncd 
+bitgen -intstyle ise -f tekst_scroll.ut tekst_scroll.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s500e-fg320-4 tekst_scroll.ngc tekst_scroll.ngd  
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s500e-fg320-4 tekst_scroll.ngc tekst_scroll.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o tekst_scroll_map.ncd tekst_scroll.ngd tekst_scroll.pcf 
+par -w -intstyle ise -ol high -t 1 tekst_scroll_map.ncd tekst_scroll.ncd tekst_scroll.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tekst_scroll.twx tekst_scroll.ncd -o tekst_scroll.twr tekst_scroll.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f tekst_scroll.ut tekst_scroll.ncd 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s500e-fg320-4 tekst_scroll.ngc tekst_scroll.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o tekst_scroll_map.ncd tekst_scroll.ngd tekst_scroll.pcf 
+par -w -intstyle ise -ol high -t 1 tekst_scroll_map.ncd tekst_scroll.ncd tekst_scroll.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tekst_scroll.twx tekst_scroll.ncd -o tekst_scroll.twr tekst_scroll.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f tekst_scroll.ut tekst_scroll.ncd 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s500e-fg320-4 tekst_scroll.ngc tekst_scroll.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o tekst_scroll_map.ncd tekst_scroll.ngd tekst_scroll.pcf 
+par -w -intstyle ise -ol high -t 1 tekst_scroll_map.ncd tekst_scroll.ncd tekst_scroll.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tekst_scroll.twx tekst_scroll.ncd -o tekst_scroll.twr tekst_scroll.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f tekst_scroll.ut tekst_scroll.ncd 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s1200e-fg320-4 tekst_scroll.ngc tekst_scroll.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o tekst_scroll_map.ncd tekst_scroll.ngd tekst_scroll.pcf 
+par -w -intstyle ise -ol high -t 1 tekst_scroll_map.ncd tekst_scroll.ncd tekst_scroll.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tekst_scroll.twx tekst_scroll.ncd -o tekst_scroll.twr tekst_scroll.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f tekst_scroll.ut tekst_scroll.ncd 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s1200e-fg320-4 tekst_scroll.ngc tekst_scroll.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o tekst_scroll_map.ncd tekst_scroll.ngd tekst_scroll.pcf 
+par -w -intstyle ise -ol high -t 1 tekst_scroll_map.ncd tekst_scroll.ncd tekst_scroll.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tekst_scroll.twx tekst_scroll.ncd -o tekst_scroll.twr tekst_scroll.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f tekst_scroll.ut tekst_scroll.ncd 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s1200e-fg320-4 tekst_scroll.ngc tekst_scroll.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o tekst_scroll_map.ncd tekst_scroll.ngd tekst_scroll.pcf 
+par -w -intstyle ise -ol high -t 1 tekst_scroll_map.ncd tekst_scroll.ncd tekst_scroll.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tekst_scroll.twx tekst_scroll.ncd -o tekst_scroll.twr tekst_scroll.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f tekst_scroll.ut tekst_scroll.ncd 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s1200e-fg320-4 tekst_scroll.ngc tekst_scroll.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o tekst_scroll_map.ncd tekst_scroll.ngd tekst_scroll.pcf 
+par -w -intstyle ise -ol high -t 1 tekst_scroll_map.ncd tekst_scroll.ncd tekst_scroll.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tekst_scroll.twx tekst_scroll.ncd -o tekst_scroll.twr tekst_scroll.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f tekst_scroll.ut tekst_scroll.ncd 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s1200e-fg320-4 tekst_scroll.ngc tekst_scroll.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o tekst_scroll_map.ncd tekst_scroll.ngd tekst_scroll.pcf 
+par -w -intstyle ise -ol high -t 1 tekst_scroll_map.ncd tekst_scroll.ncd tekst_scroll.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tekst_scroll.twx tekst_scroll.ncd -o tekst_scroll.twr tekst_scroll.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f tekst_scroll.ut tekst_scroll.ncd 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s1200e-fg320-4 tekst_scroll.ngc tekst_scroll.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o tekst_scroll_map.ncd tekst_scroll.ngd tekst_scroll.pcf 
+par -w -intstyle ise -ol high -t 1 tekst_scroll_map.ncd tekst_scroll.ncd tekst_scroll.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tekst_scroll.twx tekst_scroll.ncd -o tekst_scroll.twr tekst_scroll.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f tekst_scroll.ut tekst_scroll.ncd 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s1200e-fg320-4 tekst_scroll.ngc tekst_scroll.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o tekst_scroll_map.ncd tekst_scroll.ngd tekst_scroll.pcf 
+par -w -intstyle ise -ol high -t 1 tekst_scroll_map.ncd tekst_scroll.ncd tekst_scroll.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tekst_scroll.twx tekst_scroll.ncd -o tekst_scroll.twr tekst_scroll.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f tekst_scroll.ut tekst_scroll.ncd 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s1200e-fg320-4 tekst_scroll.ngc tekst_scroll.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o tekst_scroll_map.ncd tekst_scroll.ngd tekst_scroll.pcf 
+par -w -intstyle ise -ol high -t 1 tekst_scroll_map.ncd tekst_scroll.ncd tekst_scroll.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tekst_scroll.twx tekst_scroll.ncd -o tekst_scroll.twr tekst_scroll.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f tekst_scroll.ut tekst_scroll.ncd 
+xst -intstyle ise -ifn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.xst" -ofn "C:/Users/Konda/Documents/Xilinx/projects/hello_world/tekst_scroll.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s1200e-fg320-4 tekst_scroll.ngc tekst_scroll.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o tekst_scroll_map.ncd tekst_scroll.ngd tekst_scroll.pcf 
+par -w -intstyle ise -ol high -t 1 tekst_scroll_map.ncd tekst_scroll.ncd tekst_scroll.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tekst_scroll.twx tekst_scroll.ncd -o tekst_scroll.twr tekst_scroll.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f tekst_scroll.ut tekst_scroll.ncd 

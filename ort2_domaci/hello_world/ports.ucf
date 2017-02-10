@@ -1,0 +1,24 @@
+NET "clk" LOC = "B8";
+
+NET "out_digit<0>" LOC = "C17";
+NET "out_digit<1>" LOC = "H14";
+NET "out_digit<2>" LOC = "J17";
+NET "out_digit<3>" LOC = "G14";
+NET "out_digit<4>" LOC = "D16";
+NET "out_digit<5>" LOC = "D17";
+NET "out_digit<6>" LOC = "F18";
+NET "out_digit<7>" LOC = "L18";
+
+NET "out_ans<0>" LOC = "F15";
+NET "out_ans<1>" LOC = "C18";
+NET "out_ans<2>" LOC = "H17";
+NET "out_ans<3>" LOC = "F17";
+
+NET "pause_out" LOC = "J14";
+NET "pause"	LOC = "G18";
+NET "reverse_out" LOC = "J15";
+NET "reverse" LOC = "H18";
+NET "faster" LOC = "B18";
+NET "slower" LOC = "D18";
+NET "longer" LOC = "E18";
+NET "shorter" LOC = "H13";

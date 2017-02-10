@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Konda/Documents/Xilinx/projects/hello_world/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Konda/Documents/Xilinx/projects/hello_world/xst"
+elaborate
+-ifn min.prj
+-ifmt mixed

@@ -1,0 +1,580 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Reading design: tekst_scroll.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "tekst_scroll.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "tekst_scroll"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-4-fg320
+
+---- Source Options
+Top Module Name                    : tekst_scroll
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "karakter.v" in library work
+Compiling verilog file "slova.v" in library work
+Module <karakter> compiled
+Compiling verilog file "tekst_scroll.v" in library work
+Module <slova_display> compiled
+Module <tekst_scroll> compiled
+No errors in compilation
+Analysis of file <"tekst_scroll.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <tekst_scroll> in library <work>.
+
+Analyzing hierarchy for module <slova_display> in library <work>.
+
+Analyzing hierarchy for module <karakter> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <tekst_scroll>.
+Module <tekst_scroll> is correct for synthesis.
+ 
+Analyzing module <slova_display> in library <work>.
+Module <slova_display> is correct for synthesis.
+ 
+Analyzing module <karakter> in library <work>.
+Module <karakter> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <karakter>.
+    Related source file is "karakter.v".
+    Found 16x8-bit ROM for signal <out$mux0000>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <karakter> synthesized.
+
+
+Synthesizing Unit <slova_display>.
+    Related source file is "slova.v".
+    Found 8-bit adder carry out for signal <add0000$addsub0000> created at line 28.
+    Found 8-bit adder carry out for signal <add0001$addsub0000> created at line 29.
+    Found 8-bit adder carry out for signal <add0002$addsub0000> created at line 30.
+    Found 5-bit subtractor for signal <AUX_index_14$addsub0000> created at line 27.
+    Found 8-bit comparator greatequal for signal <AUX_index_14$cmp_ge0000> created at line 27.
+    Found 5-bit subtractor for signal <AUX_index_15$addsub0000> created at line 28.
+    Found 9-bit comparator greatequal for signal <AUX_index_15$cmp_ge0000> created at line 28.
+    Found 5-bit subtractor for signal <AUX_index_16$addsub0000> created at line 29.
+    Found 9-bit comparator greatequal for signal <AUX_index_16$cmp_ge0000> created at line 29.
+    Found 5-bit subtractor for signal <AUX_index_17$addsub0000> created at line 30.
+    Found 9-bit comparator greatequal for signal <AUX_index_17$cmp_ge0000> created at line 30.
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <slova_display> synthesized.
+
+
+Synthesizing Unit <tekst_scroll>.
+    Related source file is "tekst_scroll.v".
+WARNING:Xst:653 - Signal <reverse_blink_wait> is used but never assigned. This sourceless signal will be automatically connected to value 01001100010010110100000000.
+WARNING:Xst:653 - Signal <blink_wait> is used but never assigned. This sourceless signal will be automatically connected to value 00000000111111111111111.
+    Found 4-bit register for signal <out_ans>.
+    Found 8-bit register for signal <out_digit>.
+    Found 8-bit adder carry out for signal <add0000$addsub0000> created at line 73.
+    Found 8-bit adder carry out for signal <add0001$addsub0000> created at line 121.
+    Found 2-bit register for signal <ans_pos>.
+    Found 23-bit up counter for signal <blink_cnt>.
+    Found 23-bit comparator greatequal for signal <blink_cnt$cmp_ge0000> created at line 100.
+    Found 8-bit register for signal <duzina_teksta>.
+    Found 23-bit comparator greatequal for signal <old_ans_pos_6$cmp_ge0000> created at line 100.
+    Found 23-bit adder for signal <old_blink_cnt_4$add0000> created at line 98.
+    Found 8-bit comparator greater for signal <old_duzina_teksta_10$cmp_gt0000> created at line 92.
+    Found 8-bit subtractor for signal <old_duzina_teksta_10$sub0000> created at line 92.
+    Found 1-bit xor2 for signal <old_duzina_teksta_10$xor0000> created at line 89.
+    Found 8-bit adder for signal <old_duzina_teksta_3$addsub0000> created at line 84.
+    Found 1-bit xor2 for signal <old_duzina_teksta_3$xor0000> created at line 81.
+    Found 8-bit comparator greater for signal <old_pozicija_1$cmp_gt0000> created at line 60.
+    Found 8-bit subtractor for signal <old_pozicija_1$sub0000> created at line 60.
+    Found 8-bit subtractor for signal <old_pozicija_1$sub0001> created at line 60.
+    Found 1-bit xor2 for signal <old_pozicija_1$xor0000> created at line 55.
+    Found 8-bit adder for signal <old_pozicija_9$add0000> created at line 73.
+    Found 9-bit comparator greatequal for signal <old_pozicija_9$cmp_ge0000> created at line 73.
+    Found 26-bit adder for signal <old_reverse_blink_cnt_13$add0000> created at line 127.
+    Found 26-bit adder for signal <old_scroll_cnt_7$add0000> created at line 97.
+    Found 26-bit comparator less for signal <old_scroll_wait_2$cmp_lt0000> created at line 62.
+    Found 28-bit comparator less for signal <old_scroll_wait_8$cmp_lt0000> created at line 75.
+    Found 1-bit xor2 for signal <old_scroll_wait_8$xor0000> created at line 68.
+    Found 23-bit comparator greatequal for signal <out_ans$cmp_ge0000> created at line 100.
+    Found 32-bit shifter logical left for signal <out_ans$shift0000> created at line 104.
+    Found 8-bit 4-to-1 multiplexer for signal <out_digit$mux0000> created at line 107.
+    Found 8-bit register for signal <pozicija>.
+    Found 8-bit addsub for signal <pozicija$addsub0000>.
+    Found 9-bit comparator greatequal for signal <pozicija$cmp_ge0000> created at line 121.
+    Found 26-bit comparator greatequal for signal <pozicija$cmp_ge0001> created at line 114.
+    Found 9-bit comparator greatequal for signal <pozicija$cmp_ge0002> created at line 73.
+    Found 8-bit comparator greater for signal <pozicija$cmp_gt0000> created at line 119.
+    Found 1-bit register for signal <prethodno_faster>.
+    Found 1-bit register for signal <prethodno_longer>.
+    Found 1-bit register for signal <prethodno_shorter>.
+    Found 1-bit register for signal <prethodno_slower>.
+    Found 1-bit register for signal <reverse_blink>.
+    Found 26-bit comparator greatequal for signal <reverse_blink$cmp_ge0000> created at line 129.
+    Found 26-bit up counter for signal <reverse_blink_cnt>.
+    Found 26-bit comparator greatequal for signal <reverse_blink_cnt$cmp_ge0000> created at line 129.
+    Found 26-bit up counter for signal <scroll_cnt>.
+    Found 26-bit comparator greatequal for signal <scroll_cnt$cmp_ge0000> created at line 114.
+    Found 26-bit register for signal <scroll_wait>.
+    Summary:
+	inferred   3 Counter(s).
+	inferred  61 D-type flip-flop(s).
+	inferred  12 Adder/Subtractor(s).
+	inferred  15 Comparator(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <tekst_scroll> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 4
+ 16x8-bit ROM                                          : 4
+# Adders/Subtractors                                   : 19
+ 2-bit adder                                           : 1
+ 23-bit adder                                          : 1
+ 26-bit adder                                          : 2
+ 5-bit subtractor                                      : 4
+ 8-bit adder                                           : 2
+ 8-bit adder carry out                                 : 5
+ 8-bit addsub                                          : 1
+ 8-bit subtractor                                      : 3
+# Counters                                             : 3
+ 23-bit up counter                                     : 1
+ 26-bit up counter                                     : 2
+# Registers                                            : 11
+ 1-bit register                                        : 5
+ 2-bit register                                        : 1
+ 26-bit register                                       : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 3
+# Comparators                                          : 19
+ 23-bit comparator greatequal                          : 3
+ 26-bit comparator greatequal                          : 4
+ 26-bit comparator less                                : 1
+ 28-bit comparator less                                : 1
+ 8-bit comparator greatequal                           : 1
+ 8-bit comparator greater                              : 3
+ 9-bit comparator greatequal                           : 6
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical left                           : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 4
+ 16x8-bit ROM                                          : 4
+# Adders/Subtractors                                   : 19
+ 2-bit adder                                           : 1
+ 23-bit adder                                          : 1
+ 26-bit adder                                          : 2
+ 5-bit subtractor                                      : 4
+ 8-bit adder                                           : 2
+ 8-bit adder carry out                                 : 5
+ 8-bit addsub                                          : 1
+ 8-bit subtractor                                      : 3
+# Counters                                             : 3
+ 23-bit up counter                                     : 1
+ 26-bit up counter                                     : 2
+# Registers                                            : 61
+ Flip-Flops                                            : 61
+# Comparators                                          : 19
+ 23-bit comparator greatequal                          : 3
+ 26-bit comparator greatequal                          : 4
+ 26-bit comparator less                                : 1
+ 28-bit comparator less                                : 1
+ 8-bit comparator greatequal                           : 1
+ 8-bit comparator greater                              : 3
+ 9-bit comparator greatequal                           : 6
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical left                           : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <tekst_scroll> ...
+
+Optimizing unit <slova_display> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block tekst_scroll, actual ratio is 4.
+INFO:Xst:2260 - The FF/Latch <out_digit_5> in Unit <tekst_scroll> is equivalent to the following FF/Latch : <out_digit_6> 
+INFO:Xst:2261 - The FF/Latch <out_digit_5> in Unit <tekst_scroll> is equivalent to the following FF/Latch, which will be removed : <out_digit_6> 
+FlipFlop duzina_teksta_0 has been replicated 1 time(s)
+FlipFlop pozicija_0 has been replicated 1 time(s)
+FlipFlop pozicija_1 has been replicated 1 time(s)
+FlipFlop pozicija_2 has been replicated 1 time(s)
+FlipFlop pozicija_4 has been replicated 1 time(s)
+FlipFlop pozicija_5 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 141
+ Flip-Flops                                            : 141
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : tekst_scroll.ngr
+Top Level Output File Name         : tekst_scroll
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 21
+
+Cell Usage :
+# BELS                             : 1185
+#      GND                         : 1
+#      INV                         : 13
+#      LUT1                        : 148
+#      LUT2                        : 100
+#      LUT2_D                      : 3
+#      LUT2_L                      : 2
+#      LUT3                        : 91
+#      LUT3_D                      : 14
+#      LUT3_L                      : 5
+#      LUT4                        : 264
+#      LUT4_D                      : 41
+#      LUT4_L                      : 25
+#      MUXCY                       : 291
+#      MUXF5                       : 24
+#      VCC                         : 1
+#      XORCY                       : 162
+# FlipFlops/Latches                : 141
+#      FD                          : 44
+#      FDE                         : 8
+#      FDR                         : 75
+#      FDRE                        : 13
+#      FDSE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 20
+#      IBUF                        : 6
+#      OBUF                        : 14
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-4 
+
+ Number of Slices:                      382  out of   8672     4%  
+ Number of Slice Flip Flops:            141  out of  17344     0%  
+ Number of 4 input LUTs:                706  out of  17344     4%  
+ Number of IOs:                          21
+ Number of bonded IOBs:                  21  out of    250     8%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 141   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 19.301ns (Maximum Frequency: 51.811MHz)
+   Minimum input arrival time before clock: 19.679ns
+   Maximum output required time after clock: 5.469ns
+   Maximum combinational path delay: 6.963ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 19.301ns (frequency: 51.811MHz)
+  Total number of paths / destination ports: 5265290 / 247
+-------------------------------------------------------------------------
+Delay:               19.301ns (Levels of Logic = 16)
+  Source:            pozicija_6 (FF)
+  Destination:       pozicija_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: pozicija_6 to pozicija_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            16   0.591   1.069  pozicija_6 (pozicija_6)
+     LUT4:I2->O           13   0.704   1.018  old_pozicija_1_cmp_gt000014 (old_pozicija_1_cmp_gt000014)
+     LUT4_D:I2->LO         1   0.704   0.135  Madd_add0001_addsub0000_lut<2>1 (N348)
+     LUT3:I2->O            5   0.704   0.712  _old_pozicija_1<2>1 (Madd_add0000_addsub0000_lut<2>)
+     LUT4:I1->O           13   0.704   1.018  Madd_add0000_addsub0000_cy<3>1 (Madd_add0000_addsub0000_cy<3>)
+     LUT3:I2->O            1   0.704   0.424  Madd_add0000_addsub0000_cy<6>1_SW3 (N264)
+     LUT4:I3->O            1   0.704   0.000  Mcompar_old_pozicija_9_cmp_ge0000_lut<7> (Mcompar_old_pozicija_9_cmp_ge0000_lut<7>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_old_pozicija_9_cmp_ge0000_cy<7> (Mcompar_old_pozicija_9_cmp_ge0000_cy<7>)
+     MUXCY:CI->O          14   0.459   1.004  Mcompar_old_pozicija_9_cmp_ge0000_cy<8> (old_pozicija_9_cmp_ge0000)
+     LUT4_D:I3->O          8   0.704   0.792  Madd_add0001_addsub0000_cy<0>18 (Madd_add0001_addsub0000_cy<0>)
+     LUT4_D:I2->O          8   0.704   0.792  Madd_add0001_addsub0000_cy<3>11 (Madd_add0001_addsub0000_cy<3>)
+     LUT3:I2->O            0   0.704   0.000  Madd_add0001_addsub0000_xor<5>11 (add0001_addsub0000<5>)
+     MUXCY:DI->O           1   0.888   0.000  Mcompar_pozicija_cmp_ge0000_cy<5> (Mcompar_pozicija_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_pozicija_cmp_ge0000_cy<6> (Mcompar_pozicija_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_pozicija_cmp_ge0000_cy<7> (Mcompar_pozicija_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.459   0.424  Mcompar_pozicija_cmp_ge0000_cy<8> (pozicija_cmp_ge0000)
+     LUT4:I3->O           13   0.704   0.983  pozicija_or0001 (pozicija_or0001)
+     FDRE:R                    0.911          pozicija_0
+    ----------------------------------------
+    Total                     19.301ns (10.930ns logic, 8.371ns route)
+                                       (56.6% logic, 43.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 521117 / 135
+-------------------------------------------------------------------------
+Offset:              19.679ns (Levels of Logic = 17)
+  Source:            pause (PAD)
+  Destination:       pozicija_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: pause to pozicija_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            56   1.218   1.349  pause_IBUF (pause_out_OBUF)
+     LUT3_D:I1->O         12   0.704   0.996  _old_pozicija_1<0>11 (N3)
+     LUT4_L:I2->LO         1   0.704   0.135  _old_pozicija_1<6>1_SW1 (N127)
+     LUT4:I2->O            6   0.704   0.704  _old_pozicija_1<6>1 (Madd_add0000_addsub0000_lut<6>)
+     LUT4:I2->O            1   0.704   0.000  Madd_add0000_addsub0000_cy<6>1_SW2_F (N298)
+     MUXF5:I0->O           1   0.321   0.455  Madd_add0000_addsub0000_cy<6>1_SW2 (N249)
+     LUT4:I2->O            2   0.704   0.447  add0000_addsub0000<7>1 (add0000_addsub0000<7>)
+     MUXCY:DI->O           1   0.888   0.000  Mcompar_old_pozicija_9_cmp_ge0000_cy<7> (Mcompar_old_pozicija_9_cmp_ge0000_cy<7>)
+     MUXCY:CI->O          14   0.459   1.004  Mcompar_old_pozicija_9_cmp_ge0000_cy<8> (old_pozicija_9_cmp_ge0000)
+     LUT4_D:I3->O          8   0.704   0.792  Madd_add0001_addsub0000_cy<0>18 (Madd_add0001_addsub0000_cy<0>)
+     LUT4_D:I2->O          8   0.704   0.792  Madd_add0001_addsub0000_cy<3>11 (Madd_add0001_addsub0000_cy<3>)
+     LUT3:I2->O            0   0.704   0.000  Madd_add0001_addsub0000_xor<5>11 (add0001_addsub0000<5>)
+     MUXCY:DI->O           1   0.888   0.000  Mcompar_pozicija_cmp_ge0000_cy<5> (Mcompar_pozicija_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_pozicija_cmp_ge0000_cy<6> (Mcompar_pozicija_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_pozicija_cmp_ge0000_cy<7> (Mcompar_pozicija_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.459   0.424  Mcompar_pozicija_cmp_ge0000_cy<8> (pozicija_cmp_ge0000)
+     LUT4:I3->O           13   0.704   0.983  pozicija_or0001 (pozicija_or0001)
+     FDRE:R                    0.911          pozicija_0
+    ----------------------------------------
+    Total                     19.679ns (11.598ns logic, 8.081ns route)
+                                       (58.9% logic, 41.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 13 / 13
+-------------------------------------------------------------------------
+Offset:              5.469ns (Levels of Logic = 2)
+  Source:            reverse_blink (FF)
+  Destination:       reverse_out (PAD)
+  Source Clock:      clk rising
+
+  Data Path: reverse_blink to reverse_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q             2   0.591   0.482  reverse_blink (reverse_blink)
+     LUT3:I2->O            1   0.704   0.420  reverse_out1 (reverse_out_OBUF)
+     OBUF:I->O                 3.272          reverse_out_OBUF (reverse_out)
+    ----------------------------------------
+    Total                      5.469ns (4.567ns logic, 0.902ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               6.963ns (Levels of Logic = 3)
+  Source:            pause (PAD)
+  Destination:       reverse_out (PAD)
+
+  Data Path: pause to reverse_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            56   1.218   1.349  pause_IBUF (pause_out_OBUF)
+     LUT3:I1->O            1   0.704   0.420  reverse_out1 (reverse_out_OBUF)
+     OBUF:I->O                 3.272          reverse_out_OBUF (reverse_out)
+    ----------------------------------------
+    Total                      6.963ns (5.194ns logic, 1.769ns route)
+                                       (74.6% logic, 25.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 32.00 secs
+Total CPU time to Xst completion: 32.11 secs
+ 
+--> 
+
+Total memory usage is 302040 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

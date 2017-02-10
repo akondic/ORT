@@ -1,0 +1,3 @@
+verilog work "karakter.v"
+verilog work "slova.v"
+verilog work "tekst_scroll.v"
